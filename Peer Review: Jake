@@ -1,0 +1,64 @@
+1. Does the project appear to meet the technical requirements? Write up one sentence on your findings and give a score 0-3.
+
+Is your peer making API calls, using SDK's/third-party libraries?
+  YES, several at different times. Score = 3.
+
+Is your peer making use of Services? If so, are they offloading long tasks to a separate thread, i.e. AsyncTask, Runnable, 
+IntentService, etc.
+  I don't see any use of services for offloading tasks, but it seems like that's probably not needed anyway since the
+  fragments use API calls not database read/write. Score = 2, only because you might want to think about using a service 
+  if it makes sense and you haven't thought about it already...but I'm sure you have.
+  
+Is your peer making use of Fragments? If so, are they passing data from Fragment to Activity via interfaces? If not, why 
+did absense of Fragments make sense?
+  YES, Sam is using fragments and is passing information back and forth via interfaces. Score = 3
+
+Is your peer making use of RecyclerView? If so, does it appear to be working correctly ( implementation and otherwise )?
+  YES, there are severl apparently correct uses of the RecyclerView. Score = 3
+
+Is your peer making use of some sort of persistent storage, i.e. Firebase or SQLite? If so, why do you think Firebase/SQLite was chosen? Could they have used one or the other instead and why?
+  NO, there does not appear to be persistent data storage. There does not seem to be a "history" so this may be on purpose,
+  although I also don't see shared preferences being used maintain the state of the fragments. Score = 2, again only because you 
+  may want to use it.
+
+2. Does the project appear to be creative, innovative, and different from any competition? Write up one sentence on your 
+findings and give a score 0-3.
+
+Is your peer making use of proper UX patterns we learned in class? If not, what are they doing that is unconvetional or 
+that might confuse a user ( you )?
+  YES, the UX seems to be good and well thoughtout. I like the the user is given so much information.
+
+Is your peer making anything cool or awesome that you would like to note or applaud them on?
+  Again I really like all the various kinds of info you are providing the user.
+  
+3. Does the project appear to follow correct coding styles and best practices? Write up one sentence on your findings 
+and give a score 0-3.
+
+Are you able to reasonably follow the code without having anyone answer your questions?
+  The code is clear but there is a distinct lack of comments throughout. This makes it a little unclear as to what is
+  happening sometimes or what something does.
+  
+Are you able to make sense of what the code is doing or is trying to do?
+  Again, it's clear for the most part, but without any comments its hard to piece everything together sometimes.
+  
+4. Find two pieces of code of any size: one that is readable and easy to follow and one that is difficult to follow and 
+understand.
+
+What makes the readable code readable? Be as detailed as you can in your answer, it can be challenging to explain why 
+something is easy to undertand.
+  Your RecyclerViewAdapter classes are written very well, they are organized anc concise.
+  
+What makes the difficult code harder to follow? Be as detailed as you can in your answer.
+  There are so many methods in the InputFragment class that it's hard to follow wheat goes where, the order gets confusing 
+  and there is no sense of "sections" or "blocks" of related methods.
+  
+5. High level project overview: Take a look at as many individual files as you have time for
+
+Does this class make sense?
+  Yes, the choice of words i.e. naming convention is strong and clear.
+
+Does the structure of the class make sense?
+  The over all structure is good, but again some organizing comments would be helpful.
+  
+Is it clear what this class is supposed to do?
+  Due to the naming convention being well implemented it's clear that the classes are doing.
